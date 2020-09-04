@@ -1,0 +1,69 @@
+.site-header{
+  position: absolute;
+  width: 100%;
+  background-color: rgba($mainBlue, .3);
+  &__logo{
+    float: left;
+    height: 50px;
+  }
+  &__icon-menu{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    @include atMedium{
+      display: none;
+    }
+   // background-color: white;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      transition: all .3s ease-out;
+      transform-origin: 0 0;
+    }
+    &__middle{
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      transition: all .3s ease-out;
+      transform-origin: 0 100%;
+    }
+
+  }
+  &__icon-menu__close-x{
+    &::before{
+      transform: rotate(45deg) scaleX(1.25);
+    }
+    .site-header__icon-menu__middle{
+      opacity: 0;
+      transform: scale(0);
+    }
+    &::after{
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+  &__content-menu{
+    &__is-visible{
+      background-color: blue;
+    }
+
+  }
+}

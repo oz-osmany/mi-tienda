@@ -1,3 +1,8 @@
-body{
-  background-color: antiquewhite;
-}
+@import "~normalize.css";
+@import "base/global";
+@import "base/mixin";
+@import "base/variables";
+@import "modulos/header";
+@import "modulos/container";
+@import "modulos/nav";
+@import "modulos/banner";
