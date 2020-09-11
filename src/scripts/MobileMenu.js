@@ -2,21 +2,35 @@ import $ from 'jquery';
 class MobileMenu {
     constructor() {
         this.menuIcon=$(".site-header__icon-menu");
-        this.menuContent=$(".site-header__menu-content");
+        this.menuNav=$(".nav");
+        this.prodMenu=$(".submenu");
 
     this.events();
+    this.slideEvent();
     }
     events(){
         this.menuIcon.click(this.toggleTheMenu.bind(this));
     }
-    toggleTheMenu(){
-        this.menuContent.toggleClass("site-header__menu-content--is-visible");
-        this.menuIcon.toggleClass("site-header__icon-menu__close-x");
+    slideEvent(){
+        $(".submenu").click(function (){
+
+            $(this).children("ul").slideToggle();
 
 
+        })
+
+
+        $("ul").click(function (p){
+            p.stopPropagation();
+        })
     }
 
+    toggleTheMenu(){
 
+        this.menuNav.toggleClass("nav__visible");
+        this.menuIcon.toggleClass("site-header__icon-menu__close-x");
+        //this.prodMenu.toggleClass("submenu__active");
+    }
 
 
 }

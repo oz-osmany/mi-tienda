@@ -1,19 +1,100 @@
 .nav{
-  float: right;
-  display: none;
-  @include atMedium{
-    display: inline-block;
-  }
-  ul{
 
+  @include atSmall{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($darkBlue, .8);
+    transform: translateX(-100%);
+    ul{
+      display: block;
+
+    }
+    ul li{
+      position: relative;
+      list-style: none;
+      top: 35px;
+      padding: 12px 35px;
+      border: 1px solid #8a98db;
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+    ul li ul li{
+      position: relative;
+      padding: 10px 0;
+      top: 12px;
+      background-color: rgba($mainBlue, .3);
+      width: 100%;
+      border-top: #8a98db;
+      padding-left: 55px;
+
+    }
+    ul li:hover ul{
+      display: none;
+      //position: static;
+    }
+    a span{
+      position: absolute;
+      transform: rotate(90deg);
+      right: 8px;
+    }
+    ul ul{
+      position: relative;
+      display: none;
+      width: 100vw;
+      left: -35px;
+
+    }
+    ul li a:hover{
+      cursor: pointer;
+      color: #8a98db;
+    }
   }
-  li{
-    list-style: none;
-    display: inline-block;
-    padding-right: 5px;
+
+  @include atMedium{
+    display: flex;
+    justify-content: flex-end;
+    //width: 50%;
+
+    ul{//hace que el nav este situado en el medio
+      display: flex;
+      list-style: none;
+
+    }
+
+    ul li ul{
+      position: absolute;
+      background-color: rgba($mainBlue, .3);
+      width: 100%;
+    }
+    a{
+      display: block;
+      padding: 15px 15px;
+      text-decoration: none;
+    }
+    span{
+      display: none;
+    }
+    ul li:hover ul{
+      display: block;
+      position: absolute;
+    }
+    ul ul{
+      display: none;
+      position: relative;
+    }
   }
-  a{
-    text-decoration: none;
-    color: #000;
+
+  &__visible{
+    transition: transform .5s;
+    transform: translateX(0%);
   }
+
+
+
 }

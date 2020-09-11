@@ -6,7 +6,7 @@
   }
 }
 @mixin atSmall{
-  @media (min-width: 530px) {
+  @media (max-width: 799px) {
     @content;
   }
 }
