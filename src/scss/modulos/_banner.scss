@@ -1,5 +1,9 @@
 .banner{
-  position: relative;
-  top: 43px;
-  border: 1px solid aqua;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  img{
+    height: 450px;
+    width: 1300px;
+  }
 }
