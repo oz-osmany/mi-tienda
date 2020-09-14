@@ -1,6 +1,9 @@
 .nav{
-
-  @include atSmall{
+  display: flex;
+  justify-content: flex-end;
+  @include atMedium{
+    display: block;
+    //justify-content: flex-start;
     position: absolute;
     top: 50px;
     left: 0;
@@ -57,10 +60,7 @@
     }
   }
 
-  @include atMedium{
-    display: flex;
-    justify-content: flex-end;
-    //width: 50%;
+  @include atLarge{
 
     ul{//hace que el nav este situado en el medio
       display: flex;
@@ -70,7 +70,7 @@
 
     ul li ul{
       position: absolute;
-      background-color: rgba($mainBlue, .3);
+      background-color: rgba($mainBlue, .8);
       width: 100%;
       z-index: 10;
     }

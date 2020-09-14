@@ -1,0 +1,16 @@
+.tittle{
+  text-align: center;
+  &__top-img{
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  &__img-footer{
+    height: 30px;
+    width: 100%;
+  }
+  &__img-footer-ver{
+    width: 90px;
+    margin-top: 10px;
+  }
+
+}

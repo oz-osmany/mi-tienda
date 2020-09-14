@@ -1,10 +1,12 @@
 .site-header{
-  //position: absolute;
-  //width: 100%;
+  position: absolute;
+  width: 100%;
   height: 50px;
+  //padding: 10px 0;
+
 
   //padding-top: 50px;
-  background-color: rgba($mainBlue, .3);
+ //background-color: rgba($mainBlue, .3);
   &__logo{
     float: left;
     position: absolute;
@@ -24,9 +26,10 @@
     width: 20px;
     height: 20px;
     z-index: 30;
-    @include atMedium{
+    @include atLarge{
       display: none;
     }
+
    // background-color: white;
     &::before{
       content: "";
@@ -73,39 +76,8 @@
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
   }
-  /*&__menu-content{
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba($mainBlue, .1);
-    //transition: transform 0.5s;
-    transform: translateX(-100%);
-    z-index: -10;
-    @include atMedium{
-      position: absolute;
-      opacity: 1;
-      height: 50px;
-      top: 0;
-      background: rgba($mainBlue, .3);
-      //display: block;
-      //transform-origin: 0 90%;
-      transform: translateX(0%);
-      //padding-top: 0;
-      z-index: 1;
-    }
-    &__is-visible{
-      position: absolute;
-
-      opacity: 1;
-      transition: transform 0.5s ease-out;
-      transform: translateX(0%);
-      //padding-top: 190px;
-      display: block;
-      z-index: 1;
-
-    }
+  @include atMedium{
+   background-color: rgba($mainBlue, .3);
   }
-*/
+
 }
