@@ -1,5 +1,8 @@
 .product-info{
   position: relative;
   width: 100%;
-  padding: 4.5rem 0;
+  padding-top: 4.5rem;
+  &__service{
+    padding: 0.5rem 0;
+  }
 }
