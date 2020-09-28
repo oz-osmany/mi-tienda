@@ -1,6 +1,6 @@
 {
-  "name": "compras-online",
-  "version": "1.0.0",
+  "name": "tienda",
+    "version": "1.0.0",
   "scripts": {
     "build": "rimraf dist && webpack",
     "start:dev": "webpack-dev-server --open"

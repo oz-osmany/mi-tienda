@@ -5,38 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Osmany Machado">
 
-    <title>Mis compras</title>
+    <title>Mis compras.</title>
 
 <link href="styles.css" rel="stylesheet"></head>
 <body>
-<header>
-    <div>Logo</div>
-    <div>
-        <ul>
-            <li>Inicio</li>
-            <li>Noticias</li>
-            <li>Productos</li>
-            <li>Servicios</li>
+<header class="site-header">
+    <div class="container">
+        <div class="site-header__logo">
+            <img src="images/logo-compras.png">
+        </div>
+        <div class="site-header__icon-menu">
+            <div class="site-header__icon-menu__middle"></div>
+        </div>
 
-        </ul>
+        <div class="nav">
+            <ul id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li class="submenu"><a href="#">Productos<span> > </span></a>
+                    <ul>
+                        <li><a href="#moda-hombres">Moda Para hombres</a></li>
+                        <li><a href="#moda-mujeres">Moda Para mujeres</a></li>
+                        <li><a href="#moda-mujeres">Moda Para niños</a></li>
+                        <li><a href="#moda-mujeres">Moda Para niñas</a></li>
+                        <li><a href="#moda-mujeres">Accesorios</a></li>
+                    </ul></li>
+                <li class="submenu"><a href="#servicios">Servicios<span> > </span></a>
+                    <ul>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">Entregas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contactos">Contactos</a></li>
+
+            </ul>
+
+        </div>
+
     </div>
-    <div>
-        Aqui van las fotos
-    </div>
-    <div>
-        Aqui va la informacion de los servicios
-    </div>
-    <div>
-        Aqui va el footer
-    </div>
-
-
-
-
-
 </header>
-
-<script src="App.js"></script><script src="Vendor.js"></script></body>
+<script src="App.js"></script></body>
 </html>

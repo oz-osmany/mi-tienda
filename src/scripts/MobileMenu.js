@@ -29,7 +29,7 @@ class MobileMenu {
 
         this.menuNav.toggleClass("nav__visible");
         this.menuIcon.toggleClass("site-header__icon-menu__close-x");
-        //this.prodMenu.toggleClass("submenu__active");
+        $("li.submenu").toggleClass("submenu__gg");
     }
 
 
