@@ -32,6 +32,5 @@ class MobileMenu {
         //this.prodMenu.toggleClass("submenu__active");
     }
 
-
 }
 export default MobileMenu;

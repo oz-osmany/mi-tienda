@@ -1,6 +1,8 @@
 {
-  "name": "compras-online",
+  "name": "tienda",
   "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
   "scripts": {
     "build": "rimraf dist && webpack",
     "start:dev": "webpack-dev-server --open"
@@ -51,3 +53,4 @@
     "webpack-node-externals": "^2.5.1"
   }
 }
+
