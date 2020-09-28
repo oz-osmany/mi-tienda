@@ -317,7 +317,8 @@ body {
 .site-header {
   position: absolute;
   width: 100%;
-  height: 50px; }
+  height: 50px;
+  background-color: rgba(27, 49, 152, 0.8); }
   .site-header__logo {
     float: left;
     position: absolute;
@@ -343,7 +344,7 @@ body {
       top: 0;
       width: 20px;
       height: 3px;
-      background-color: blue;
+      background-color: white;
       transition: all .3s ease-out;
       transform-origin: 0 0; }
     .site-header__icon-menu__middle {
@@ -351,7 +352,7 @@ body {
       top: 8px;
       width: 20px;
       height: 3px;
-      background-color: red;
+      background-color: white;
       transition: all .3s ease-out;
       transform-origin: 0 50%; }
     .site-header__icon-menu::after {
@@ -360,7 +361,7 @@ body {
       bottom: 1px;
       width: 20px;
       height: 3px;
-      background-color: blue;
+      background-color: white;
       transition: all .3s ease-out;
       transform-origin: 0 100%; }
   .site-header__icon-menu__close-x::before {
@@ -372,20 +373,7 @@ body {
     transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
   @media (max-width: 800px) {
     .site-header {
-      background-color: rgba(185, 190, 215, 0.3); } }
-
-.container {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto; }
-  .container__color-products {
-    background-color: #eaf1f8;
-    border-radius: 5px; }
-
-.container__banner-title {
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+      background-color: rgba(27, 49, 152, 0.8); } }
 
 .nav {
   display: flex;
@@ -416,10 +404,12 @@ body {
         position: relative;
         padding: 10px 0;
         top: 12px;
-        background-color: rgba(185, 190, 215, 0.3);
+        background-color: rgba(77, 82, 103, 0.3);
         width: 100%;
         border-top: #8a98db;
         padding-left: 55px; }
+      .nav ul li ul li a:hover {
+        color: #000d64; }
       .nav ul li:hover ul {
         display: none; }
       .nav a span {
@@ -440,18 +430,22 @@ body {
       list-style: none; }
     .nav ul li ul {
       position: absolute;
-      background-color: rgba(185, 190, 215, 0.8);
+      background-color: rgba(27, 49, 152, 0.8);
       width: 100%;
       z-index: 10; }
     .nav a {
       display: block;
       padding: 15px 15px;
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
     .nav span {
       display: none; }
     .nav ul li:hover ul {
       display: block;
       position: absolute; }
+    .nav ul li a:hover {
+      cursor: pointer;
+      color: #8a98db; }
     .nav ul ul {
       display: none;
       position: relative; } }
@@ -467,64 +461,4 @@ body {
     height: 350px;
     width: 1300px;
     display: block; }
-
-.column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 15px; }
-  .column__4 {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 350px;
-    border: 1px solid #605e5e;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #dbebf3;
-    margin-bottom: 30px; }
-    .column__4 img {
-      width: 100%;
-      height: 270px; }
-    .column__4 a {
-      text-decoration: none;
-      padding: 3px 5px;
-      border-radius: 5px;
-      background-color: rgba(185, 190, 215, 0.2);
-      margin-top: 10px; }
-  .column__5 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 45px;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px; }
-    .column__5 img {
-      width: 100px;
-      height: 100px; }
-  .column__anuncios {
-    padding-top: 30px; }
-
-.tittle {
-  text-align: center;
-  padding: 10px 0; }
-  .tittle__top-img {
-    font-weight: bold;
-    padding-bottom: 5px; }
-  .tittle__img-footer {
-    height: 30px;
-    width: 100%; }
-  .tittle__img-footer-ver {
-    width: 90px;
-    margin-top: 10px; }
-  .tittle__sub {
-    color: #000; }
-
-.product-info {
-  position: relative;
-  width: 100%;
-  padding-top: 4.5rem; }
-  .product-info__service {
-    padding: 0.5rem 0; }
 

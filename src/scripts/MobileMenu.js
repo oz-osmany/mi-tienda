@@ -3,7 +3,7 @@ class MobileMenu {
     constructor() {
         this.menuIcon=$(".site-header__icon-menu");
         this.menuNav=$(".nav");
-        this.prodMenu=$(".submenu");
+
 
     this.events();
     this.slideEvent();
