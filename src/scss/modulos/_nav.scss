@@ -12,6 +12,7 @@
     background-color: rgba($darkBlue, .8);
     transform: translateX(-100%);
     z-index: 10;
+
     ul{
       display: block;
 
@@ -38,6 +39,9 @@
       padding-left: 55px;
 
     }
+    ul li ul li a:hover {
+      color: #000d64;
+    }
     ul li:hover ul{
       display: none;
       //position: static;
@@ -56,8 +60,9 @@
     }
     ul li a:hover{
       cursor: pointer;
-      color: #8a98db;
+      color: $over;
     }
+
   }
 
   @include atLarge{
@@ -70,7 +75,7 @@
 
     ul li ul{
       position: absolute;
-      background-color: rgba($mainBlue, .8);
+      background-color: rgba($menuBlue, .8);
       width: 100%;
       z-index: 10;
     }
@@ -78,6 +83,7 @@
       display: block;
       padding: 15px 15px;
       text-decoration: none;
+      color: white;
     }
     span{
       display: none;
@@ -85,6 +91,10 @@
     ul li:hover ul{
       display: block;
       position: absolute;
+    }
+    ul li a:hover{
+      cursor: pointer;
+      color: $over;
     }
     ul ul{
       display: none;
