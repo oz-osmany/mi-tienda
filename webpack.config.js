@@ -8,7 +8,7 @@ const TerserPlugin=require('terser-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        App:'./src/Apps.js',
+        App:'./mi-tienda/src/Apps.js',
 
     },
 
@@ -100,7 +100,7 @@ module.exports = {
 
         new nodePlugin(),
         new HtmlWebPackPlugin({
-            template: './src/index.html',
+            template: './mi-tienda/src/index.html',
             filename: './index.html',
             minify: false
         }),
