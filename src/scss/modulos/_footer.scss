@@ -1,0 +1,12 @@
+.footer{
+  position: relative;
+  top: 30px;
+width: 100%;
+  &__redes{
+    height: 70px;
+    background-color: rgba($menuBlue, .80);
+    h1{
+      color: white;
+    }
+  }
+}
