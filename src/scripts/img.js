@@ -6,4 +6,6 @@
     import "../images/mochilas1.jpg";
     import "../images/entrega-domicilio.jpg";
     import "../images/pagos-tarjeta.jpg";
+    import "../images/botas-H1.jpg";
+    import "../images/botas-H2.jpg";
 
