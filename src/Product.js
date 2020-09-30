@@ -11,7 +11,7 @@ $(document).ready(function (){
                 tasks.forEach(task=>{
                     template +=` <div class="column__3">
                                     <img src="./src/images/${task.imagen}">
-                                    <div class="tittle__img-footer-ver"><h3>${task.departamento}</h3></div>
+                                    <div class="tittle__img-footer-ver"><h3><a href="departamento.html?dep=${task.departamento}">${task.departamento}</a></h3></div>
                                     </div>`
 
                 });
