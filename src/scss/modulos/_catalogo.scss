@@ -1,0 +1,19 @@
+.catalogo{
+  position: relative;
+  top: 20px;
+  min-height: 900px;
+
+  &__info{
+    width: 300px;
+    margin-right: 15px;
+
+  }
+  &__cuerpo{
+    width: 100%;
+    //background-color: darkgreen;
+  }
+  &__cuerpo-inner{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

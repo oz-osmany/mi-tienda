@@ -9,7 +9,7 @@ module.exports = {
     mode: 'development',
     entry: {
         App:'./src/Apps.js',
-        //Vendor: './src/Vendor.js'
+        Product: './src/Product.js'
     },
 
     devtool: 'inline-source-map',
@@ -17,16 +17,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist/"),
         filename: "[name].js"
     },
-    /*optimization: {
-        minimize: true,
-        minimizer: [
-            new TerserPlugin({
-                extractComments:'all',
-            }),
-        ]
-    },*/
-
-    module: {
+      module: {
         rules: [
             {
                 test: /\.js$/,
@@ -102,6 +93,11 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: './src/index.html',
             filename: './index.html',
+            minify: false
+        }),
+        new HtmlWebPackPlugin({
+            template: './src/departamento.html',
+            filename: './departamento.html',
             minify: false
         }),
         new miniExtractPlugin({
