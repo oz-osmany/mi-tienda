@@ -1,7 +1,12 @@
 .tittle{
   text-align: center;
   padding: 10px 0;
-
+  &__catalogo{
+    padding: 5px 0;
+    h1{
+      margin: 0;
+    }
+  }
   &__top-img{
     font-weight: bold;
     padding-bottom: 5px;
