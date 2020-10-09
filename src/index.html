@@ -16,6 +16,16 @@
         <div class="site-header__logo">
             <img src="images/logo-compras.png">
         </div>
+        <form name="miForm" action="departamento.html" method="get">
+        <div class="buscador">
+            <label for="search"><abbr title="Este campo es obligatorio" aria-label="required"></abbr></label>
+            <input type="text" id="search" autocomplete="off" name="buscador" required>
+            <ul class="salida"></ul>
+
+            <div><button type="submit" class="icon-search"></button></div>
+        </div>
+        </form>
+
         <div class="site-header__icon-menu">
             <div class="site-header__icon-menu__middle"></div>
         </div>
@@ -49,9 +59,9 @@
     </div>
 </div>
 <section id="productos" class="product-info">
-    <div class="container container__color-products">
+    <div class="container container__color-products container__column">
         <div class="tittle">
-            <h1>Todas las vistas</h1>
+            <h1 >Todas las vistas</h1>
         </div>
         <div class="column">
             <div class="column__4">
@@ -89,7 +99,7 @@
 </section>
 <section id="servicios" class="product-info__service">
 
-    <div class="container container__color-products">
+    <div class="container container__color-products container__column">
         <div>
             <h1 class="tittle">Nuestros servicios</h1>
         </div>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="prueba">
+        <input type="text" name="control" id="control">
+    </div>
+    <div class="salida"></div>
+</body>
+<script>
+    import $ from "jquery"
+    $(document).ready(function (){
+        console.log("Hola");
+        $("#control").keyup(function (e){//buscador del menu
+            let depart=$("#control").val();
+            var minimo=1;
+            if(depart.length >minimo){
+                $.ajax({
+                    url: "https://tienda.test/Tienda/mi-tienda/src/php/busqueda.php",
+                    type: "POST",
+                    data: {depart},
+                    success: function (resp){
+                        $(".salida").html(resp);
+                    }
+                })
+            }
+        })
+    })
+</script>
+</html>
